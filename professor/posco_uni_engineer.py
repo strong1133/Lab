@@ -31,9 +31,3 @@ wb.save("professor.xlsx")
 
 # sheet.append([name, tit, email, tel])
 # wb.save("professor.xlsx")
-
-#post-152 > div > div > div.plist_contbox > div > div.unit_cont_ro.unit2 > div > div > ul > li:nth-child(6) > div > div.hc_wrap > div.c_slat > div.c_info1 > span
-#post-152 > div > div > div.plist_contbox > div > div.unit_cont_ro.unit2 > div > div > ul > li:nth-child(5) > div > div.hc_wrap > div.h_slat > div
-# post-152 > div > div > div.plist_contbox > div > div.unit_cont_ro.unit2 > div > div > ul > li:nth-child(1) > div > div.hc_wrap > div.h_slat > a > div
-# post-152 > div > div > div.plist_contbox > div > div.unit_cont_ro.unit2 > div > div > ul > li:nth-child(2) > div > div.hc_wrap > div.h_slat > a > div
-#post-152 > div > div > div.plist_contbox > div > div.unit_cont_ro.unit2 > div > div > ul > li:nth-child(8) > div > div.hc_wrap > div.c_slat > div.c_info2 > span > a
