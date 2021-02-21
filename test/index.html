@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function (){
+        showRate()
+    })
+    function showRate(){
+        $.ajax({
+            type: "GET",
+            url: "https://api.manana.kr/exchange/rate.json",
+            data: {},
+            success: function (response) {
+                //rate 환율 값 가지고오기
+                let rate = response[1]['rate'];
+                //text로 보이게 하기
+                $('#dollor').text(rate);
+            }
+        })
+    }
+    </script>
+</head>
+<body>
+    <div id="dollor"></div>
+</body>
+</html>
