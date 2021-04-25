@@ -18,7 +18,7 @@ class MainComponent extends Component {
             .then(res => {
                 console.log(res);
                 this.setState({
-                    message: res.data.message
+                    message: res.data
                 })
             })
             .catch(res => console.log(res))
