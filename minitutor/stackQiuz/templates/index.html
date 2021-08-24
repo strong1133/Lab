@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <title>퀴즈 예제!</title>
+  </head>
+  <body>
+
+    <div class="wrap">
+
+      <div class="header">
+        <h2 class="title">
+          예제를 들어보자!
+        </h2>
+      </div>
+
+      <div class="body-content">
+        <div class="container">
+          <div class="quiz">
+            <h2 class="quiz-content">
+              문제1. 버튼을 눌러보세요!
+            </h2>
+          </div>
+          <div class="ans">
+            <button class="ans_btn" onclick="btn_click('A')"  id="type_A">A</button>
+            <button class="ans_btn" onclick="btn_click('B')"  id="type_B">B</button>
+            <button class="ans_btn" onclick="btn_click('C')"  id="type_C">C</button>
+            <button class="ans_btn" onclick="btn_click('D')"  id="type_D">D</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+
+  <style>
+
+
+  </style>
+</html>
