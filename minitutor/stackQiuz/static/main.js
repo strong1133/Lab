@@ -1,5 +1,7 @@
 $(document).ready(function () {
     getQuiz(1);
+    tab_acv();
+    $('.tab2-content').hide();
 })
 
 let idx = 1
@@ -13,7 +15,6 @@ function getQuiz(idx){
         success: function (response){
             $('.quiz-content').empty();
             $('.quiz-content').append(response["quiz"])
-
         }
     })
 }
@@ -32,3 +33,20 @@ function btn_click(x){
     getQuiz(idx,x)
 
 }
+
+function tab_acv(){
+    $('#tab1').on('click', function () {
+        $('#tab1').addClass('acv')
+        $('#tab2').removeClass('acv')
+        $('.tab1-content').show();
+        $('.tab2-content').hide();
+    })
+
+    $('#tab2').on('click', function () {
+        $('#tab1').removeClass('acv')
+        $('#tab2').addClass('acv')
+        $('.tab2-content').show();
+        $('.tab1-content').hide();
+    })
+}
+
